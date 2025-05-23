@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "webAppName": {
+            "value": "my-mvcapp-contact-db"
+        },
+        "hostingPlanName": {
+            "value": "my-mvcapp-plan"
+        },
+        "skuName": {
+            "value": "F1"
+        },
+        "location": {
+            "value": "East US"
+        },
+        "sqlServerName": {
+            "value": "mycontactdbserver"
+        },
+        "sqlDbName": {
+            "value": "ContactDatabase"
+        },
+        "sqlAdminLogin": {
+            "value": "sqladminuser"
+        },
+        "sqlAdminPassword": {
+            "value": "YourStrong!Passw0rd"
+        }
+    }
+}

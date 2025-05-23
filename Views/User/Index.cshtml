@@ -9,6 +9,15 @@
 <p>
     @Html.ActionLink("Create New", "Create", "User")
 </p>
+<form asp-action="Index" asp-controller="User" method="get" class="form-inline mb-3">
+    <div class="form-group">
+        <label for="SearchString" class="mr-2"><strong>Find by name</strong></label>
+        <input type="text" name="SearchString" id="SearchString" class="form-control mr-2" value="@(ViewBag.SearchString ?? "")" />
+        <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+</form>
+
+
 <table class="table">
     <tr>
         <th>
